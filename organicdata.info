@@ -1,0 +1,5 @@
+name = Organic Data
+description = Mass creation, association and dissemination of information.
+core = 7.x
+dependencies[] = node
+dependencies[] = field
