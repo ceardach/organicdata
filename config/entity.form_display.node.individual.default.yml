@@ -1,0 +1,13 @@
+id: node.individual.default
+uuid: 565461b0-740c-468c-8256-86bd7b8af04a
+targetEntityType: node
+bundle: individual
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: '0'
+    settings:
+      rows: '9'
+      summary_rows: '3'
+      placeholder: ''

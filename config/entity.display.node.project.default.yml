@@ -1,0 +1,11 @@
+id: node.project.default
+uuid: 272013c9-1425-4e15-9c03-3acd6aab4c7e
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

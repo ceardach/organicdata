@@ -1,0 +1,13 @@
+id: node.event.default
+uuid: f2973a9b-2f7c-4cc3-8c00-d6951218d7b5
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: '0'
+    settings:
+      rows: '9'
+      summary_rows: '3'
+      placeholder: ''

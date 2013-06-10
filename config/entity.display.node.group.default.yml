@@ -1,0 +1,11 @@
+id: node.group.default
+uuid: 282becce-79c1-47de-8317-238bb3a01793
+targetEntityType: node
+bundle: group
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

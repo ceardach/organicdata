@@ -1,0 +1,12 @@
+id: node.note.teaser
+uuid: 519fc629-b747-4d39-a430-48f1f03225af
+targetEntityType: node
+bundle: note
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

@@ -1,0 +1,12 @@
+id: node.individual.teaser
+uuid: 27e76742-c100-4c7f-9900-c582f03ec1b7
+targetEntityType: node
+bundle: individual
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

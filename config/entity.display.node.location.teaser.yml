@@ -1,0 +1,12 @@
+id: node.location.teaser
+uuid: d7ae4a74-323e-44e2-9f26-3847fad35067
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

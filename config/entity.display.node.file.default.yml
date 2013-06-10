@@ -1,0 +1,11 @@
+id: node.file.default
+uuid: f9d74184-779b-4e93-833c-60d363dcd199
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

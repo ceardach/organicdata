@@ -1,0 +1,12 @@
+id: node.event.teaser
+uuid: 51edcb26-3849-490d-a30b-111678b3b79d
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

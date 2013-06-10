@@ -1,0 +1,11 @@
+id: node.note.default
+uuid: c8e4c961-e329-4a3f-a600-f5de0f485b6c
+targetEntityType: node
+bundle: note
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

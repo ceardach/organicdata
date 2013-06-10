@@ -1,0 +1,11 @@
+id: node.event.default
+uuid: e60fa32f-7691-47c9-b306-6e462d2c4139
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

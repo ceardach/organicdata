@@ -1,0 +1,11 @@
+id: node.link.default
+uuid: 156e80a1-3787-47a5-b100-a14fa9cff539
+targetEntityType: node
+bundle: link
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

@@ -1,0 +1,17 @@
+id: node.file.body
+uuid: 4f3d2a52-f29d-4716-9d40-649104b3538e
+status: '1'
+langcode: en
+field_uuid: 5d0a5620-619a-4840-8f01-1fa7d7bf36f2
+entity_type: node
+bundle: file
+label: Body
+description: ''
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  display_summary: '1'
+  text_processing: '1'
+  user_register_form: '0'
+field_type: text_with_summary

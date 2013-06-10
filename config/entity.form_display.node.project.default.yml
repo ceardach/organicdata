@@ -1,0 +1,13 @@
+id: node.project.default
+uuid: 96c5de0f-a6f2-4038-ac02-2fb7656b7d59
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: '0'
+    settings:
+      rows: '9'
+      summary_rows: '3'
+      placeholder: ''

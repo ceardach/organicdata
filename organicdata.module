@@ -4,3 +4,84 @@
  * @file
  * Allows mass creation, association and dissemination of information.
  */
+
+
+/**
+ * Implements hook_node_info().
+ */
+function organicdata_node_info() {
+  return array(
+    'article' => array(
+      'name' => t('Article'),
+      'base' => 'organicdata_article',
+      'description' => t('In depth content detailing a topic, discovery or research.'),
+      'help' => t('Provide content that is in depth about a topic.  This type of content will likely be long and thoughtful.  Otherwise, create an <a href="node/add/note">note</a>'),
+      'title_label' => t('Title'),
+      'locked' => FALSE,
+    ),
+    'event' => array(
+      'name' => t('Event'),
+      'base' => 'organicdata_event',
+      'description' => t('Something that happened at a particular time.  Could be something planned, such as a convention or wedding, or something unplanned, such as a disaster or a puppy showing up at your doorstep.'),
+      'help' => t('Describe what occured at this event and what made it particularly notable.'),
+      'title_label' => t('What was it called?'),
+      'locked' => FALSE,
+    ),
+    'file' => array(
+      'name' => t('File'),
+      'base' => 'organicdata_file',
+      'description' => t('Content that is not text and does not have a 1:1 relationship with another entity.  Can be an image, which will be displayed, or a file of any other type, such as PDFs, zips, etc.'),
+      'help' => t('Provide a file.'),
+      'title_label' => t('Brief description'),
+      'locked' => FALSE,
+    ),
+    'group' => array(
+      'name' => t('Group'),
+      'base' => 'organicdata_group',
+      'description' => t('Information about a particular group of individuals, whether they be humans or non-human beings.  Can be companies, families, stereotypes, or breeds of cats and dogs.'),
+      'help' => t('Just the facts, ma\'am. The rest will be drawn from its associations with other entities.'),
+      'title_label' => t('Name'),
+      'locked' => FALSE,
+    ),
+    'individual' => array(
+      'name' => t('Individual'),
+      'base' => 'organicdata_individual',
+      'description' => t('Information about a particular individual, whether it be a human or non-human being.'),
+      'help' => t('Just the facts, ma\'am. The rest will be drawn from its associations with other entities.'),
+      'title_label' => t('Name'),
+      'locked' => FALSE,
+    ),
+    'link' => array(
+      'name' => t('Link'),
+      'base' => 'organicdata_link',
+      'description' => t('Reference to an external internet source.'),
+      'help' => t('Provide an address.'),
+      'title_label' => t('Title'),
+      'locked' => FALSE,
+    ),
+    'location' => array(
+      'name' => t('Location'),
+      'base' => 'organicdata_location',
+      'description' => t('Description of a particular location that has relevance.'),
+      'help' => t('Provide a location.'),
+      'title_label' => t('Description'),
+      'locked' => FALSE,
+    ),
+    'note' => array(
+      'name' => t('Note'),
+      'base' => 'organicdata_note',
+      'description' => t('Brief discussion on a topic.  The primary goal is to get the information recorded, not to be polished.'),
+      'help' => t('Provide at least the minimum amount of information needed to express the topic.  Remember: the primary goal is to get the information recorded, not to have it be polished and perfect!'),
+      'title_label' => t('Description'),
+      'locked' => FALSE,
+    ),
+    'project' => array(
+      'name' => t('Project'),
+      'base' => 'organicdata_project',
+      'description' => t('Description of a particular project or undertaking.'),
+      'help' => t('Just the facts, ma\'am. The rest will be drawn from its associations with other entities.'),
+      'title_label' => t('Title or description'),
+      'locked' => FALSE,
+    ),
+  );
+}

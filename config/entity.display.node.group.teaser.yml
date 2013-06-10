@@ -1,0 +1,12 @@
+id: node.group.teaser
+uuid: 48575246-b28c-4dc2-aa51-81906ec14b42
+targetEntityType: node
+bundle: group
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

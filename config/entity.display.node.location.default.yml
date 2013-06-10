@@ -1,0 +1,11 @@
+id: node.location.default
+uuid: 03ed46da-6b1d-4a63-b400-f739a5522046
+targetEntityType: node
+bundle: location
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

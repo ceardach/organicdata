@@ -1,0 +1,11 @@
+id: node.article.default
+uuid: 16f36730-b6dd-438d-901f-3198a1da110e
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: '0'
+    settings: {  }

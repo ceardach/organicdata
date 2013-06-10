@@ -1,0 +1,17 @@
+id: node.note.body
+uuid: a4827b0a-f711-46cd-8900-0c30cfea952a
+status: '1'
+langcode: en
+field_uuid: 5d0a5620-619a-4840-8f01-1fa7d7bf36f2
+entity_type: node
+bundle: note
+label: Body
+description: ''
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  display_summary: '1'
+  text_processing: '1'
+  user_register_form: '0'
+field_type: text_with_summary

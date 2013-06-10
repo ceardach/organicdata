@@ -1,0 +1,13 @@
+id: node.file.default
+uuid: ae80fd61-5c4e-41cc-aa4e-78a344725f4a
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: '0'
+    settings:
+      rows: '9'
+      summary_rows: '3'
+      placeholder: ''

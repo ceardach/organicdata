@@ -1,0 +1,13 @@
+id: node.note.default
+uuid: 2ae44e57-bf70-4272-8c00-e95b8d53b06d
+targetEntityType: node
+bundle: note
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: '0'
+    settings:
+      rows: '9'
+      summary_rows: '3'
+      placeholder: ''

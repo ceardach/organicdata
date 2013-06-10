@@ -1,0 +1,12 @@
+id: node.article.teaser
+uuid: fc835505-a05c-414a-8700-d442b12410e1
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

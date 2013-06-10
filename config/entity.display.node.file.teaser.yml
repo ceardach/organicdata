@@ -1,0 +1,12 @@
+id: node.file.teaser
+uuid: c4e8f899-2222-460a-b415-21347258e511
+targetEntityType: node
+bundle: file
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'
