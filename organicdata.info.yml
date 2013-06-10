@@ -1,0 +1,8 @@
+name: Organic Data
+type: module
+description: 'Mass creation, association and dissemination of information.'
+package: Organic Data
+version: 1.0
+core: 8.x
+dependencies:
+  - node
