@@ -25,6 +25,7 @@ function organicdata_node_info() {
       'description' => t('Something that happened at a particular time.  Could be something planned, such as a convention or wedding, or something unplanned, such as a disaster or a puppy showing up at your doorstep.'),
       'help' => t('Describe what occured at this event and what made it particularly notable.'),
       'title_label' => t('What was it called?'),
+      'has_title' => TRUE,
     ),
     'organicdata_file' => array(
       'name' => t('Organic File'),
@@ -32,6 +33,7 @@ function organicdata_node_info() {
       'description' => t('Content that is not text and does not have a 1:1 relationship with another entity.  Can be an image, which will be displayed, or a file of any other type, such as PDFs, zips, etc.'),
       'help' => t('Provide a file.'),
       'title_label' => t('Brief description'),
+      'has_title' => TRUE,
     ),
     'organicdata_group' => array(
       'name' => t('Organic Group'),
@@ -39,6 +41,7 @@ function organicdata_node_info() {
       'description' => t('Information about a particular group of individuals, whether they be humans or non-human beings.  Can be companies, families, stereotypes, or breeds of cats and dogs.'),
       'help' => t('Just the facts, ma\'am. The rest will be drawn from its associations with other entities.'),
       'title_label' => t('Name'),
+      'has_title' => TRUE,
     ),
     'organicdata_individual' => array(
       'name' => t('Organic Individual'),
@@ -46,6 +49,7 @@ function organicdata_node_info() {
       'description' => t('Information about a particular individual, whether it be a human or non-human being.'),
       'help' => t('Just the facts, ma\'am. The rest will be drawn from its associations with other entities.'),
       'title_label' => t('Name'),
+      'has_title' => TRUE,
     ),
     'organicdata_link' => array(
       'name' => t('Organic Link'),
@@ -53,6 +57,7 @@ function organicdata_node_info() {
       'description' => t('Reference to an external internet source.'),
       'help' => t('Provide an address.'),
       'title_label' => t('Title'),
+      'has_title' => TRUE,
     ),
     'organicdata_location' => array(
       'name' => t('Organic Location'),
@@ -60,6 +65,7 @@ function organicdata_node_info() {
       'description' => t('Description of a particular location that has relevance.'),
       'help' => t('Provide a location.'),
       'title_label' => t('Description'),
+      'has_title' => TRUE,
     ),
     'organicdata_note' => array(
       'name' => t('Organic Note'),
@@ -67,6 +73,7 @@ function organicdata_node_info() {
       'description' => t('Brief discussion on a topic.  The primary goal is to get the information recorded, not to be polished.'),
       'help' => t('Provide at least the minimum amount of information needed to express the topic.  Remember: the primary goal is to get the information recorded, not to have it be polished and perfect!'),
       'title_label' => t('Description'),
+      'has_title' => TRUE,
     ),
     'organicdata_project' => array(
       'name' => t('Organic Project'),
@@ -74,6 +81,7 @@ function organicdata_node_info() {
       'description' => t('Description of a particular project or undertaking.'),
       'help' => t('Just the facts, ma\'am. The rest will be drawn from its associations with other entities.'),
       'title_label' => t('Title or description'),
+      'has_title' => TRUE,
     ),
   );
 }
