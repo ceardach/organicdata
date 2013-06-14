@@ -5,6 +5,7 @@
  * Allows mass creation, association and dissemination of information.
  */
 
+include_once 'organicdata.features.inc';
 
 /**
  * Implements hook_node_info().
