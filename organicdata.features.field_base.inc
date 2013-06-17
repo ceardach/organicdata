@@ -10,6 +10,28 @@
 function organicdata_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'endpoints'
+  $field_bases['endpoints'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'endpoints',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'relation' => array(
+        0 => 'entity_type',
+        1 => 'entity_id',
+        2 => 'r_index',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'relation_endpoint',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_endpoint',
+  );
+
   // Exported field_base: 'field_organicdata_body'
   $field_bases['field_organicdata_body'] = array(
     'active' => 1,
@@ -35,6 +57,22 @@ function organicdata_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_organicdata_contributor'
+  $field_bases['field_organicdata_contributor'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_contributor',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_add',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_add',
   );
 
   // Exported field_base: 'field_organicdata_date'
@@ -81,6 +119,33 @@ function organicdata_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'email',
+  );
+
+  // Exported field_base: 'field_organicdata_emailcontext'
+  $field_bases['field_organicdata_emailcontext'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_emailcontext',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'home' => 'personal',
+        'work' => 'professional',
+        'partner_shared' => 'shared with partner',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_organicdata_file'
@@ -143,6 +208,22 @@ function organicdata_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_organicdata_infoabout'
+  $field_bases['field_organicdata_infoabout'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_infoabout',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_add',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_add',
+  );
+
   // Exported field_base: 'field_organicdata_lastname'
   $field_bases['field_organicdata_lastname'] = array(
     'active' => 1,
@@ -200,6 +281,38 @@ function organicdata_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_organicdata_located'
+  $field_bases['field_organicdata_located'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_located',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_add',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_add',
+  );
+
+  // Exported field_base: 'field_organicdata_locatedat'
+  $field_bases['field_organicdata_locatedat'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_locatedat',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_dummy_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation',
   );
 
   // Exported field_base: 'field_organicdata_location'
@@ -299,6 +412,22 @@ function organicdata_field_default_field_bases() {
     'type' => 'location',
   );
 
+  // Exported field_base: 'field_organicdata_owner'
+  $field_bases['field_organicdata_owner'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_owner',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_add',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_add',
+  );
+
   // Exported field_base: 'field_organicdata_phone'
   $field_bases['field_organicdata_phone'] = array(
     'active' => 1,
@@ -315,6 +444,67 @@ function organicdata_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'phone',
+  );
+
+  // Exported field_base: 'field_organicdata_phonecontext'
+  $field_bases['field_organicdata_phonecontext'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_phonecontext',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'mobile' => 'mobile',
+        'home' => 'home',
+        'work' => 'work',
+        'partner_mobile' => 'partner mobile',
+        'partner_work' => 'partner work',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_organicdata_photoof'
+  $field_bases['field_organicdata_photoof'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_photoof',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_add',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_add',
+  );
+
+  // Exported field_base: 'field_organicdata_related'
+  $field_bases['field_organicdata_related'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organicdata_related',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'relation_add',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'relation_add',
   );
 
   return $field_bases;

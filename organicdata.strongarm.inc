@@ -92,7 +92,7 @@ function organicdata_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
@@ -134,7 +134,7 @@ function organicdata_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
@@ -146,7 +146,7 @@ function organicdata_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
@@ -200,7 +200,7 @@ function organicdata_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
@@ -227,7 +227,7 @@ function organicdata_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
@@ -254,7 +254,7 @@ function organicdata_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
@@ -281,7 +281,7 @@ function organicdata_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
