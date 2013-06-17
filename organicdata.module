@@ -6,3 +6,40 @@
  */
 
 include_once 'organicdata.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function organicdata_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    // Restrict access to the node title field.
+    case 'organicdata_individual_node_form':
+    case 'organicdata_link_node_form':
+    case 'organicdata_location_node_form':
+      $form['title']['#type'] = 'hidden';
+      $form['title']['#access'] = FALSE;
+      break;
+  }
+}
+
+/**
+ * Implements hook_node_submit().
+ */
+function organicdata_node_presave($node) {
+  switch ($node->type) {
+    // Replace individual's title with a combination of the first name and last name.
+    case 'organicdata_individual':
+      $node->title = $node->field_organicdata_firstname['und'][0]['value'] . ' ' . $node->field_organicdata_lastname['und'][0]['value'];
+      break;
+
+    // Replace link's title with the title of the link.
+    case 'organicdata_link':
+      $node->title = $node->field_organicdata_link['und'][0]['title'];
+      break;
+
+    // Replace location's title with the title of the location.
+    case 'organicdata_location':
+      $node->title = $node->field_organicdata_location['und'][0]['name'];
+      break;
+  }
+}
