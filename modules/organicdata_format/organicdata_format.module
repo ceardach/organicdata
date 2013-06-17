@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Sets up filter formats for inputting content.
+ */
+
+include_once 'organicdata_format.features.inc';
